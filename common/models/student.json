@@ -1,11 +1,16 @@
 {
   "name": "Student",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
+    "id":{
+      "type": "object",
+      "generated": false,
+      "id":true
+    },
     "firstName": {
       "type": "string",
       "required": true
